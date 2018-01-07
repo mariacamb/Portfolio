@@ -1,0 +1,355 @@
+/*PORTFOLIO PORTFOLIOPAGE stylesheet*/
+
+body {
+    background-image: url(AAAAH.png);
+}
+
+header {
+    position: absolute;
+    top: 45%;
+    left: 17%;
+    margin-top: -310px;
+    font-family: "Helvetica Neue Thin";
+    font-size: 69px;
+    transition: all 0.5s ease-out;
+    background: #fff;
+    color: #000;
+}
+
+
+/*sidenavigation burger menu*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 160px;
+}
+
+.sidenav a {
+    padding: 8px 8px 16px 32px;
+    text-decoration: none;
+    font-size: 45px;
+    font-family: "Helvetica Neue Thin";
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 46px;
+    margin-left: 50px;
+}
+
+
+/*Text styling*/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    background: #393232;
+    padding: 23px;
+    position: absolute;
+    margin-top: -310px;
+    font-family: "Helvetica Neue Thin", "Open Sans";
+    font-size: 30px;
+    color: white;
+    transition: all 0.5s ease-out;
+}
+
+h1 {
+    top: 60%;
+    left: 46%;
+}
+
+h1:hover {
+    opacity: 0.8;
+}
+
+h2 {
+    top: 110%;
+    left: 46%;
+}
+
+h2:hover {
+    opacity: 0.8;
+}
+
+h3 {
+    top: 240%;
+    left: 46%;
+}
+
+h3:hover {
+    opacity: 0.8;
+}
+
+h4 {
+    top: 298%;
+    left: 46%;
+}
+
+h4:hover {
+    opacity: 0.8;
+}
+
+h5 {
+    top: 187%;
+    left: 46%;
+}
+
+h5:hover {
+    opacity: 0.8;
+}
+
+p,
+p1,
+p2,
+p3,
+p4 {
+    background: white;
+    padding: 13px;
+    opacity: 0.7;
+    position: absolute;
+    margin-top: -310px;
+    font-family: "Helvetica Neue Thin", "Open Sans";
+    font-size: 19px;
+    color: black;
+    transition: all 0.5s ease-out;
+}
+
+p {
+    top: 75%;
+    left: 46%;
+}
+
+p1 {
+    top: 125%;
+    left: 46%;
+}
+
+p2 {
+    top: 256%;
+    left: 46%;
+}
+
+p3 {
+    top: 318%;
+    left: 46%;
+}
+
+p4 {
+    top: 205%;
+    left: 46%;
+}
+
+
+/*bottom links invisible*/
+
+p5 {
+    visibility: hidden;
+}
+
+
+/*Picture navigation buttons*/
+
+#fridabutton {
+    position: absolute;
+    top: 29%;
+    left: 6%;
+}
+
+#hodgsons {
+    position: absolute;
+    top: 29%;
+    left: 18%;
+}
+
+#PPredesign {
+    position: absolute;
+    top: 29%;
+    left: 31%;
+}
+
+#batman {
+    position: absolute;
+    top: 87%;
+    left: 6%;
+}
+
+#stl {
+    position: absolute;
+    top: 82%;
+    left: 19%;
+}
+
+#sheet {
+    position: absolute;
+    top: 82%;
+    left: 31%;
+}
+
+#pablo {
+    position: absolute;
+    top: 102%;
+    left: 7%;
+}
+
+#inferno {
+    position: absolute;
+    top: 102%;
+    left: 10%;
+}
+
+#menu {
+    position: absolute;
+    top: 99%;
+    left: 22%;
+}
+
+#calc {
+    position: absolute;
+    top: 107%;
+    left: 32%;
+}
+
+#coll {
+    position: absolute;
+    top: 156%;
+    left: 6%;
+}
+
+#stor {
+    position: absolute;
+    top: 156%;
+    left: 22%;
+}
+
+#sleep {
+    position: absolute;
+    top: 172%;
+    left: 14%;
+}
+
+#reakreate {
+    position: absolute;
+    top: 216%;
+    left: 6%;
+}
+
+#ppxkreate {
+    position: absolute;
+    top: 203%;
+    left: 23%;
+}
+
+#toobusy {
+    position: absolute;
+    top: 270%;
+    left: 6%;
+}
+
+#cphdare {
+    position: absolute;
+    top: 270%;
+    left: 23%;
+}
+
+
+/*MOBILE VERSION*/
+
+@media only screen and (max-width:620px) {
+    /*TExt adjustments*/
+    
+    h1 {
+        top: 65%;
+    }
+    h2 {
+        top: 114%;
+    }
+    h5 {
+        top: 195%;
+    }
+    h3 {
+        top: 247%;
+    }
+    h4 {
+        top: 307%;
+    }
+    
+        header {
+        font-size: 40px;
+    }
+    p,
+    p1,
+    p2,
+    p3,
+    p4 {
+        font-size: 15px;
+        left: 6%;
+    }
+    h,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-size: 13px;
+        left: 6%;
+    }
+    /*bottom links visible*/
+    p5 {
+        visibility: visible;
+        font-size: 15px;
+        font-family: "Helvetica Neue Thin";
+        background: white;
+        padding: 13px;
+        opacity: 0.7;
+        position: absolute;
+        top: 356%;
+        left: 6%;
+        margin-top: -310px;
+        font-family: "Helvetica Neue Thin";
+        font-size: 15px;
+        color: black;
+        transition: all 0.5s ease-out;
+    }
+    
+    /*picture button navigation hidden*/
+    
+    
+    #fridabutton,
+    #hodgsons,
+    #PPredesign,
+    #batman,
+    #stl,
+    #sheet,
+    #pablo,
+    #inferno,
+    #menu,
+    #calc,
+    #coll,
+    #stor,
+    #sleep,
+    #reakreate,
+    #ppxkreate,
+    #toobusy,
+    #cphdare {
+        visibility: hidden;
+    }
+}

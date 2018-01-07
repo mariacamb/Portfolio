@@ -1,0 +1,158 @@
+/*PORTFOLIO HOMEPAGE stylesheet*/
+
+
+/*side navigation- burger menu, specification for mobile website*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 160px;
+}
+
+.sidenav a {
+    padding: 8px 8px 16px 32px;
+    text-decoration: none;
+    font-family: "Helvetica Neue Thin", "Open Sans";
+    font-size: 45px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 46px;
+    margin-left: 50px;
+}
+
+
+/*side navigation invisible in desktop version*/
+
+.sidenav,
+.sidenav a,
+span {
+    visibility: hidden;
+}
+
+
+/*background picture*/
+
+.picture {
+    object-position: center;
+    margin-right: -550px;
+    width: 1500px;
+    height: 700px;
+}
+
+
+/*Texts styling*/
+
+h1 {
+    position: fixed;
+    top: 50%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    font-family: "Helvetica Neue Thin", "Open Sans";
+    font-size: 45px;
+    font-size: 29px;
+    margin-top: -150px;
+    background-color: black;
+    color: antiquewhite;
+    padding: 18px;
+    opacity: 0.7;
+}
+
+header {
+    position: fixed;
+    top: 50%;
+    left: 17%;
+    margin-top: -310px;
+    font-family: "Helvetica Neue Thin", "Open Sans";
+    font-size: 45px;
+    font-size: 69px;
+    transition: all 0.5s ease-out;
+    background: #fff;
+    color: #000;
+}
+
+.hovered {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+.footer {
+    position: fixed;
+    bottom: 1%;
+    right: 17%;
+    font-family: "Helvetica Neue Thin", "Open Sans";
+}
+
+
+/*navigation buttons*/
+
+#aboutbutton {
+    position: fixed;
+    top: 90%;
+    left: 2%;
+    margin-top: -310px;
+    transform: rotate(90deg);
+}
+
+#portfoliobutton {
+    position: fixed;
+    top: 90%;
+    right: 2%;
+    margin-top: -310px;
+    transform: rotate(270deg);
+}
+
+
+/* MOBILE VERSION*/
+
+@media only screen and (max-width:620px) {
+    /*TEXT adjustments*/
+    header {
+        position: absolute;
+        font-size: 30px;
+        top: 55%;
+    }
+    h1 {
+        position: absolute;
+        font-size: 20px;
+    }
+    .footer {
+        visibility: hidden
+    }
+    /*picture change*/
+    .picture {
+        visibility: hidden;
+    }
+    body {
+        background-image: url(avocado.png);
+        background-repeat: no-repeat;
+    }
+    /*hide button navigation*/
+    #aboutbutton,
+    #portfoliobutton {
+        visibility: hidden;
+    }
+    /* side burger menu visible*/
+    .sidenav,
+    .sidenav a,
+    span {
+        visibility: visible;
+    }
+}

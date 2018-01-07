@@ -1,0 +1,205 @@
+/*PORTFOLIO ABOUTPAGE stylesheet*/
+
+body {
+    background-image: url(AAAAH.png);
+    font-family: "Helvetica Neue thin", "Open Sans";
+}
+
+
+/*text styling*/
+
+p {
+    background: #444343;
+    padding: 15px;
+    position: fixed;
+    top: 85%;
+    left: 18%;
+    margin-top: -310px;
+    font-family: "Helvetica Neue Thin", "Open Sans";
+    font-size: 20px;
+    color: white;
+    transition: all 0.5s ease-out;
+}
+
+p:hover {
+    opacity: 0.8;
+}
+
+h2 {
+    background: #393232;
+    padding: 15px;
+    position: fixed;
+    top: 75%;
+    left: 18%;
+    margin-top: -310px;
+    font-family: "Helvetica Neue Thin" , "Open Sans";
+    font-size: 20px;
+    color: white;
+    transition: all 0.5s ease-out;
+}
+
+h2:hover {
+    opacity: 0.8;
+}
+
+header {
+    position: fixed;
+    top: 50%;
+    left: 18%;
+    margin-top: -310px;
+    font-family: "Helvetica Neue Thin", "Open Sans";
+    font-size: 49px;
+    transition: all 0.5s ease-out;
+    color: #000;
+}
+
+#I {
+    position: fixed;
+    width: 700px;
+    height: 550px;
+    top: 90%;
+    right: 2%;
+    margin-top: -500px;
+}
+
+.hand {
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 80px;
+    animation: rotate 2s infinite;
+    position: fixed;
+    top: 90%;
+    right: 2%;
+    margin-top: -500px;
+}
+
+.books {
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 240px;
+    position: fixed;
+    bottom: 4%;
+    left: 3%;
+    margin-top: -500px;
+}
+
+
+/*animation hand*/
+
+@keyframes rotate {
+    from {
+        transform: rotate(0) translateX(0);
+        transform: rotate(0) translateX(0);
+    }
+    to {
+        transform: rotate(500deg) translateX(100px);
+        transform: rotate(500deg) translateX(100px);
+    }
+}
+
+
+/*side navigation- burger menu*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 160px;
+}
+
+.sidenav a {
+    padding: 8px 8px 16px 32px;
+    text-decoration: none;
+    font-size: 45px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 46px;
+    margin-left: 50px;
+}
+
+
+/*social media icons*/
+
+.fa:hover {
+    opacity: 0.6;
+}
+
+.fa-instagram {
+    color: black;
+    font-size: 48px;
+    position: absolute;
+    right: 5%;
+    top: 9%;
+}
+
+.fa-facebook {
+    color: black;
+    font-size: 48px;
+    position: absolute;
+    right: 9%;
+    top: 9%;
+}
+
+
+/*MOBILE VERSION*/
+
+@media only screen and (max-width:620px) {
+    /*Adjustments*/
+    header {
+        position: absolute;
+        font-size: 30px;
+    }
+    .fa-instagram {
+        position: absolute;
+        font-size: 20px;
+    }
+    .fa-facebook {
+        position: absolute;
+        font-size: 20px;
+        right: 11%;
+    }
+    #I {
+        position: absolute;
+        width: 400px;
+        height: 325px;
+        top: 90%;
+        right: 2%;
+        margin-top: -500px;
+    }
+    .hand {
+        position: absolute;
+        width: 80px;
+        height: 60px;
+    }
+    h2 {
+        position: absolute;
+        top: 110%;
+        left: 11%;
+    }
+    p {
+        position: absolute;
+        top: 122%;
+        left: 11%;
+    }
+    /*HIDDEN CONTENT*/
+    .books {
+        visibility: hidden;
+    }
+}
